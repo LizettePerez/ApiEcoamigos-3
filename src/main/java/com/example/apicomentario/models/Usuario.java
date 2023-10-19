@@ -22,17 +22,14 @@ import java.util.List;
 
 public class Usuario {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Long usuario_id;
+    @Column (name = "email")
+    private String usuarioEmail;
 
     @Column (name = "token")
     private String usuarioToken;
 
     @Column (name = "nombre")
     private String usuarioNombre;
-
-    @Column (name = "email")
-    private String usuarioEmail;
 
     @Column (name = "imagen")
     private String usuarioImagen;

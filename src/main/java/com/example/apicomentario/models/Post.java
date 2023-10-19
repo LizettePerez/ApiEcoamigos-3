@@ -33,9 +33,9 @@ public class Post {
     @Column(name = "me_gusta")
     private Integer postMeGusta;
 
-    @JsonIgnore
+    //@JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "usuariosId")
+    @JoinColumn(name = "usuarioEmail")
     private Usuario usuario;
 
     @OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
